@@ -130,11 +130,8 @@ namespace TMNT_Tello
                 string filenameNoExt = Path.GetFileNameWithoutExtension(fi.Name);
                 string outputFilename = Path.Combine(_outputPath, filenameNoExt + ".png");
 
-                if (File.Exists(outputFilename))
-                {
-                    currentImage.Save(outputFilename, System.Drawing.Imaging.ImageFormat.Png);
-                    MessageBox.Show("Output File:\n" + filenameNoExt + ".png\n\nOutput Folder:\n" + _outputPath, "Image exported successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                currentImage.Save(outputFilename, System.Drawing.Imaging.ImageFormat.Png);
+                MessageBox.Show("Output File:\n" + filenameNoExt + ".png\n\nOutput Folder:\n" + _outputPath, "Image exported successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {

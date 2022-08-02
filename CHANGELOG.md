@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in
 this file.
 
+## 0.2 - 2022/08/02 09:45:27 GMT+08:00
+### Fixed
+* `Export as...` is now working as intended where it didn't
+save anything at all before
+
 ## 0.1 - 2022/07/15 18:33:59 GMT+08:00
 * initial release
 ### To-Do
